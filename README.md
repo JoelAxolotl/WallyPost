@@ -3,7 +3,8 @@
 Assesment project for PT Informatika Media Pratama (IMP).
 Made by Joel using NextJS, TailwindCSS, and DaisyUI.  
 Linked In : [Click Me!](https://www.linkedin.com/in/joeldev04)  
-Portfolio Website : [Click Me!](https://flexporto.vercel.app)
+Portfolio Website : [Click Me!](https://flexporto.vercel.app)  
+Live Demo Web : [Click Me!](https://wally-post.vercel.app)  
 
 If you need an assitance to setup the project, please contact me for an assistance!
 
