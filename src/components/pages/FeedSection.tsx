@@ -14,12 +14,6 @@ export default async function FeedSection({
     const startIndex = (page - 1) * MAX_ITEM;
     const paginatedPosts = posts.slice(startIndex, startIndex + MAX_ITEM);
 
-    // async function test() {
-    //     console.log("Data :", posts);
-    // }
-
-    // test()
-
     return (
         <section className="mt-[25px] mb-[60px]">
             <div className="container mx-auto">

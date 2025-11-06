@@ -56,24 +56,12 @@ export default function CardPost({
     async function getAuthorName(uid: string) {
         const user = await getUserNameByID(uid);
         setUsername(user!);
-    }
 
-    async function getPostData() {
-        // setPostId(id);
-
-        // const post = await getPostByID(id);
-        // console.log(post);
-
-        // setCreatedAt(post?.createdAt!);
-        // setAuthor(post?.author!);
-        // setTitle(post?.title!);
-        // setDesc(post?.desc!);
-
-        await getAuthorName(author!);
+        console.log("Image URL :", imageUrl)
     }
 
     useEffect(() => {
-        getPostData();
+        getAuthorName(author!);
 
         const connection = onAuthStateChanged(clientAuth, (user) => {
             if (user) {
@@ -156,7 +144,7 @@ export default function CardPost({
             {
                 imageUrl && <Image className="rounded-xl border border-[#ffffff]"
                     urlEndpoint="https://ik.imagekit.io/0v2biakjo" // New prop
-                    src={"/uploads/" + imageUrl}
+                    src={imageUrl}
                     width={500}
                     height={500}
                     alt={`Post by ${author}`} />

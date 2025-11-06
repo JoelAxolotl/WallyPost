@@ -104,7 +104,7 @@ export async function updatePost(id: string, title: string, desc: string) {
     }
 }
 
-export async function postContent(title: string, caption: string, image?: string) {
+export async function postContent(title: string, caption: string, image?: string | null) {
     try {
         const user = clientAuth.currentUser;
         const timestamp = Date.now();
